@@ -12,6 +12,8 @@ public interface BlogRepository extends JpaRepository<BlogPost, Integer>{
 	List<BlogPost> findByPostedDateBetween(LocalDateTime startOfDay, LocalDateTime endOfDay);
 	
 	List<BlogPost> findBybolgHeading(String blogHeading);
+
+	List<BlogPost> findAllByUserUserId(Integer userId);
 	
 	
 

@@ -77,7 +77,10 @@ public class BlogController {
         return ResponseEntity.ok(updatedBlog);
     }
     
-    
+    @GetMapping("/getAllPostsByUserId/{userId}")
+    public ResponseEntity<List<BlogPost> > getAllPostsByUserId(@PathVariable Integer userId){
+    return new ResponseEntity<>(blogServiceInterface.getAllPostsByUserId(userId) ,HttpStatus.OK);
+    }
     
 
 }

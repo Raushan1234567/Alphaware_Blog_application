@@ -18,8 +18,6 @@ public interface BlogServiceInterface {
 	
 	void deleteBlog(Integer blogId);
 	
-	
-
 
 	BlogPost  viewBlog(Integer blogId);
 
@@ -31,4 +29,7 @@ public interface BlogServiceInterface {
 
 
 	List<BlogPost> viewPostByCategory(String category);
+
+
+	List<BlogPost> getAllPostsByUserId(int userId);
 }

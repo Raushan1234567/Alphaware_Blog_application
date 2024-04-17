@@ -151,4 +151,14 @@ String searchTerm = category.toLowerCase();
 	    return matchedBlogs;
 	}
 
+	@Override
+	public List<BlogPost> getAllPostsByUserId(int userId) {
+	List<BlogPost> postList = blogRepository.findAllByUserUserId(userId);
+	if(!postList.isEmpty()) {
+	return postList;
+	}else {
+	throw new BlogNotFoundForThisId("Post not available");
+	}
+	}
+
 }
