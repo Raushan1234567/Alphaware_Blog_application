@@ -35,6 +35,8 @@ public class BlogPost {
 	
 	private String category;
 	
+
+	
 	@JsonIgnore
 	@ManyToOne
 	private User user;

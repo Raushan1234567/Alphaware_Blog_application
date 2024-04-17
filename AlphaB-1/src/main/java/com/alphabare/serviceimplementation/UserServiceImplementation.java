@@ -1,6 +1,9 @@
 package com.alphabare.serviceimplementation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.alphabare.exception.UserAllreadyRegisteredException;
@@ -23,6 +26,26 @@ public class UserServiceImplementation implements UserServiceInterface{
 		}
 		
 		return userRepository.save(user);
+	}
+
+	@Override
+	public List<User> getAllUsers() {
+		// TODO Auto-generated method stub
+		List<User> list=userRepository.findAll();
+		return list;
+	}
+
+	@Override
+	public User getAllUsersByEmail(String email) {
+		// TODO Auto-generated method stub
+	User user1=	userRepository.findByEmail(email);
+	
+	if(user1==null) {
+		throw new UsernameNotFoundException("User not found");
+	}
+	
+	
+		return user1;
 	}
 
 }

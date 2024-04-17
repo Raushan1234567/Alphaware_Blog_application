@@ -47,7 +47,7 @@ public class AppConfig {
 				.requestMatchers("/swagger-ui*/**","/v3/api-docs/**").permitAll()
 				.requestMatchers("api/user/loginuser").hasAnyRole("ADMIN","CUSTOMER")
 				.requestMatchers(HttpMethod.POST, "/api/blog/post","/api/comment/addcomment/{blogId}").hasAnyRole("ADMIN","CUSTOMER")
-				.requestMatchers(HttpMethod.GET,"/api/comment/bypostId/{postId}","/api/blog/searchblogByHeading","/api/blog/get/allblog","/api/blog/searchblogByCategory").hasAnyRole("ADMIN","CUSTOMER")
+				.requestMatchers(HttpMethod.GET,"/api/comment/bypostId/{postId}","/api/blog/searchblogByHeading","/api/blog/get/allblog","/api/blog/searchblogByCategory","/api/user/getAllUserByEmail/{email}").hasAnyRole("ADMIN","CUSTOMER")
 		        .requestMatchers(HttpMethod.PATCH,"/api/blog/{blogId}/update","/api/comment/updatecommentsByCommentId/{commentId}").hasAnyRole("CUSTOMER","ADMIN")
 				.anyRequest().hasRole("ADMIN"))
 				.csrf(csrf -> csrf.disable())
