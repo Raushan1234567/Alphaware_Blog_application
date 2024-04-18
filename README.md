@@ -3,6 +3,7 @@
 ## Purpose
 MorningBlog is a blogging platform designed to provide both users and admins with an interface to interact with blog content.
 
+## Video explanation: https://drive.google.com/file/d/1j4WgWeU5lgyeGbkTS91ObbjQ1Y1h6UU5/view?usp=sharing
 ## Tech Stack
 - Java
 - MySQL
