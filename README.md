@@ -96,9 +96,56 @@ This document outlines the endpoints available in our system and their functiona
 - **Method:** POST
 - **Description:** Allows users to create and post a blog. The user is identified by their userID.
 
+## 8. Update Blog
 
+- **Endpoint:** `/日/6Xog/{blogid}/update`
+- **Method:** PATCH
+- **Description:** Updates a blog identified by its blog ID.
 
-## Hosting
+## 9. View Blog by ID
+
+- **Endpoint:** `/api/blog/viewByBlogid/{blogid}`
+- **Method:** GET
+- **Description:** Retrieves a blog by its ID.
+
+## 10. Search Blog by Heading
+
+- **Endpoint:** `/apt/blog/searchblogByMeading`
+- **Method:** GET
+- **Description:** Searches for blogs by heading.
+
+## 11. Search Blog by Category
+
+- **Endpoint:** `/apt/blog/searchblogByCategory`
+- **Method:** GET
+- **Description:** Searches for blogs by category.
+
+## 12. Get All Posts by User ID
+
+- **Endpoint:** `/api/blog/getAllPosteByUserId/{userid}`
+- **Method:** GET
+- **Description:** Retrieves all posts made by a specific user identified by their user ID.
+
+## 13. Get All Blogs
+
+- **Endpoint:** `/api/blog/get/allblog`
+- **Method:** GET
+- **Description:** Retrieves all blogs.
+
+## 14. Delete Blog
+
+- **Endpoint:** `/apt/blog/{blogid}`
+- **Method:** DELETE
+- **Description:** Deletes a blog identified by its blog ID.
+
+## 15. Get Today's Blogs
+
+- **Endpoint:** `/api/blog/bytoday`
+- **Method:** GET
+- **Description:** Retrieves blogs posted today.
+
+---
+
 - The application is hosted on Railway.app.
 - Access the application through the provided host link: [MorningBlog Host Link](https://alphawareblogapplication-production.up.railway.app/swagger-ui/index.html)
 
