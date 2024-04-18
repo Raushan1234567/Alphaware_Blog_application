@@ -17,6 +17,18 @@ MorningBlog is a blogging platform designed to provide both users and admins wit
 
 
 ![Screenshot (463)](https://github.com/Raushan1234567/Alphaware_Blog_application/assets/115460955/d0e0cce5-06d4-4e8f-a063-5cb2c3367968)
+## Swagger(created api)
+
+
+
+
+ ![Screenshot (464)](https://github.com/Raushan1234567/Alphaware_Blog_application/assets/115460955/15e808ec-726d-420b-b666-d035e584b508)
+
+ 
+
+![Screenshot (465)](https://github.com/Raushan1234567/Alphaware_Blog_application/assets/115460955/c95c33b8-b91b-4b1d-a5a8-8d71d12e22b1)
+
+![Screenshot (466)](https://github.com/Raushan1234567/Alphaware_Blog_application/assets/115460955/475d94ff-c05d-489d-9ebc-b0f7e7a000f2)
 
 ## User Interface Functionality
 1. **User Registration and Login**
