@@ -50,6 +50,54 @@ MorningBlog is a blogging platform designed to provide both users and admins wit
 2. **Access Endpoints**
    - Admins have access to all available endpoints.
 
+# API Endpoints
+
+This document outlines the endpoints available in our system and their functionalities.
+
+## 1. Register User
+
+- **Endpoint:** `/api/user/registers`
+- **Method:** POST
+- **Description:** Registers a new user as both an admin and a customer.
+
+## 2. User Login
+
+- **Endpoint:** `/api/user/loginuser`
+- **Method:** GET
+- **Description:** Allows a registered user to log in.
+
+## 3. Get All Users
+
+- **Endpoint:** `/api/user/getAllusers`
+- **Method:** GET
+- **Description:** Retrieves all registered users.
+
+## 4. Get User by Email
+
+- **Endpoint:** `/api/user/getAlluserByemail/{email}`
+- **Method:** GET
+- **Description:** Retrieves a user by their email address. Customers can also access this endpoint.
+
+## 5. Add Comment to Blog
+
+- **Endpoint:** `/api/comment/addcomment/{blogId}`
+- **Method:** POST
+- **Description:** Allows users to add comments to a specific blog identified by its ID.
+
+## 6. Get Comments by Post ID
+
+- **Endpoint:** `/api/comment/bypostId/{postId}`
+- **Method:** GET
+- **Description:** Retrieves comments associated with a specific post identified by its ID.
+
+## 7. Post a Blog
+
+- **Endpoint:** `/api/blog/post`
+- **Method:** POST
+- **Description:** Allows users to create and post a blog. The user is identified by their userID.
+
+
+
 ## Hosting
 - The application is hosted on Railway.app.
 - Access the application through the provided host link: [MorningBlog Host Link](https://alphawareblogapplication-production.up.railway.app/swagger-ui/index.html)
